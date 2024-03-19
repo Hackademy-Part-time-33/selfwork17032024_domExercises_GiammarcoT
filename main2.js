@@ -19,10 +19,12 @@ btn_article.addEventListener('click', () => {
         alert('inserire un contenuto in entrambi i campi')
     } //se gli input sono riempiti si procede con la creazione dell'articolo
     else{
-        if (paragraph.value.length > 300) {
-            alert('testo massimo consentito: 300 caratteri')
+        //condizionale: alert se si supera il numero massimo di caratteri
+        if (paragraph.value.length > 250) {
+            alert('testo massimo consentito: 250 caratteri');
         }
         else{
+            //se si rispetta il numero di caratteri si procede
             let article = document.createElement('article');
             //selezione colore box shadow
             article.style.boxShadow = `5px 5px 10px ${changecolor.value}`;
@@ -38,6 +40,7 @@ btn_article.addEventListener('click', () => {
         }
     }
 });
+//messa in ascolto del paragraph e conteggio caratteri inseriti
 paragraph.addEventListener('input', () => {
     lengthCounter.innerHTML = `Hai inserito ${paragraph.value.length} caratteri. <br> Testo massimo consentito: 300 caratteri`;
 });

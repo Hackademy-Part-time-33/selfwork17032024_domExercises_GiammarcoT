@@ -19,17 +19,17 @@
 
 article{
     background-color: floralwhite;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: auto;
     box-shadow: 5px 5px 10px green;
     border: 2px solid rgb(0, 0, 0);
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     word-wrap: break-word;
+    border-radius: 10%;
 }
 
 #lengthCounter{
-    position: fixed;
     width: 280px;
     height: auto;
     background-color: bisque;
