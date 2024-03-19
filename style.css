@@ -1,0 +1,40 @@
+/* STILI APPLICATI A INDEX.HTML */
+.bold {
+    font-weight: bold;
+}
+
+.display{
+    display: none;
+}
+
+
+    /* STILI APPLICATI A INDEX2.HTML */
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    
+}
+
+article{
+    background-color: floralwhite;
+    width: 250px;
+    height: 250px;
+    box-shadow: 5px 5px 10px green;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 5px;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+#lengthCounter{
+    position: fixed;
+    width: 280px;
+    height: auto;
+    background-color: bisque;
+}
+
+#paragraph{
+    word-wrap: break-word;
+}
